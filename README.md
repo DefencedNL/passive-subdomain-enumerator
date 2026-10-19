@@ -34,7 +34,7 @@ no installation or API keys.
 | [gowitness](https://github.com/sensepost/gowitness) | Screenshots live hosts with headless Chrome |
 
 ## Install dependencies
-`sudo apt-get update -y && sudo apt-get install golang-go y && go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest && go install -v github.com/tomnomnom/assetfinder@latest && go install -v github.com/owasp-amass/amass/v4/...@master && go install -v github.com/tomnomnom/httprobe@latest && go install github.com/sensepost/gowitness@latest && go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest && curl -LO https://github.com/findomain/findomain/releases/latest/download/findomain-linux.zip && unzip -o findomain-linux.zip && chmod +x findomain && sudo mv findomain /usr/local/bin/findomain && export PATH="$PATH:$(go env GOPATH)/bin"`
+`sudo apt-get update -y && sudo apt-get install golang-go -y && go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest && go install -v github.com/tomnomnom/assetfinder@latest && go install -v github.com/owasp-amass/amass/v4/...@master && go install -v github.com/tomnomnom/httprobe@latest && go install github.com/sensepost/gowitness@latest && go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest && curl -LO https://github.com/findomain/findomain/releases/latest/download/findomain-linux.zip && unzip -o findomain-linux.zip && chmod +x findomain && sudo mv findomain /usr/local/bin/findomain && export PATH="$PATH:$(go env GOPATH)/bin"`
 
 ## How to run
 `python3 subdomain_finder.py --subdomains fqdns.txt --outfile subdomains.txt --screenshot`
